@@ -5,7 +5,7 @@ metadata:
     namespace: argocd
     annotations:
         argocd-image-updater.argoproj.io/image-list: image=sumansahudockerhub/online 
-        argocd-image-updater.argoproj.io/write-back-method: git 
+        argocd-image-updater.argoproj.io/write-back-method: git:secret:argocd/argocd-image-updater-git-creds
         argocd-image-updater.argoproj.io/image.update-strategy: semver
 spec:
   project: default

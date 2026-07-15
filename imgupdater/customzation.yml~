@@ -1,7 +1,5 @@
 kind: Kustomization
 apiVersion: kustomize.config.k8s.io/v1betal
-metadata:
-  namespace: argocd
 resourses:
   - app.yml
   - secret.yml
